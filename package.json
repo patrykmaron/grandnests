@@ -4,7 +4,20 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "type-check": "tsc --pretty --noEmit",
+    "format": "prettier --write \"**/*.{js,ts,tsx}\"",
+    "lint": "eslint . --ext ts --ext tsx --ext js",
+    "test": "jest",
+    "test-all": "yarn lint && yarn type-check && yarn test",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
+  },
+  "lint-staged": {
+    "*.@(ts|tsx)": [
+      "npm lint",
+      "npm format"
+    ]
   },
   "dependencies": {
     "next": "latest",
@@ -13,11 +26,31 @@
     "styled-components": "^5.0.0"
   },
   "devDependencies": {
+    "@testing-library/react": "^10.4.8",
+    "@types/enzyme": "^3.10.5",
+    "@types/jest": "^26.0.9",
     "@types/node": "12.0.12",
     "@types/react": "16.8.23",
     "@types/react-dom": "16.8.4",
     "@types/styled-components": "5.0.1",
+    "@types/testing-library__react": "^10.2.0",
+    "@typescript-eslint/eslint-plugin": "^3.8.0",
+    "@typescript-eslint/parser": "^3.8.0",
+    "babel-core": "^6.26.3",
+    "babel-jest": "^26.2.2",
     "babel-plugin-styled-components": "^1.10.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "eslint": "^7.6.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-react": "^7.20.5",
+    "install": "^0.13.0",
+    "jest": "^26.2.2",
+    "jest-watch-typeahead": "^0.6.0",
+    "lint-staged": "^10.2.11",
+    "npm": "^6.14.7",
+    "prettier": "^2.0.5",
+    "ts-jest": "^26.1.4",
     "typescript": "3.5.2"
   },
   "license": "ISC"

@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home page matches snapshot 1`] = `
+<DocumentFragment>
+  <h1
+    class="pages__Title-urwbz9-0 cFPzpW"
+  >
+    My page
+  </h1>
+</DocumentFragment>
+`;
