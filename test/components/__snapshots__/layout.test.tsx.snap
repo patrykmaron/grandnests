@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Layout component matches snapshot and renders 1`] = `
+<DocumentFragment>
+  <div
+    class="styles__Wrapper-kt6arw-0 lcCCSV"
+  />
+</DocumentFragment>
+`;

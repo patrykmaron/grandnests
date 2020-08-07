@@ -1,11 +1,25 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Home page matches snapshot 1`] = `
+exports[`Home page matches snapshot and renders 1`] = `
 <DocumentFragment>
-  <h1
-    class="pages__Title-urwbz9-0 cFPzpW"
+  <div
+    class="styles__Wrapper-kt6arw-0 lcCCSV"
   >
-    My page
-  </h1>
+    <div
+      style="display: grid;"
+    >
+      header?
+    </div>
+    <div
+      style="display: grid;"
+    >
+      main?
+    </div>
+    <div
+      style="display: grid;"
+    >
+      footer?
+    </div>
+  </div>
 </DocumentFragment>
 `;

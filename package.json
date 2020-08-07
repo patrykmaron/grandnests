@@ -19,11 +19,18 @@
       "npm format"
     ]
   },
+  "postcss": {
+    "plugins": {
+      "postcss-nested": {}
+    }
+  },
   "dependencies": {
     "next": "latest",
+    "postcss-nested": "^4.2.3",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
-    "styled-components": "^5.0.0"
+    "styled-components": "^5.0.0",
+    "styled-jsx-plugin-postcss": "^2.0.1"
   },
   "devDependencies": {
     "@testing-library/react": "^10.4.8",

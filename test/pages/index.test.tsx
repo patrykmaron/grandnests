@@ -1,15 +1,13 @@
-import React from "react";
-import { render } from "../testUtils";
-import Home from "../../pages/index";
+import React from 'react'
+import { render } from '../testUtils'
+import Home from '../../pages/index'
+import { cleanup } from '@testing-library/react'
 
-describe("Home page", () => {
-  it("matches snapshot", () => {
-    const { asFragment } = render(<Home />, {});
-    expect(asFragment()).toMatchSnapshot();
-  });
+afterEach(cleanup)
 
-  it("should render title", () => {
-    const { getByText } = render(<Home />);
-    expect(getByText("My page"));
-  });
-});
+describe('Home page', () => {
+  it('matches snapshot and renders', () => {
+    const { asFragment } = render(<Home />, {})
+    expect(asFragment()).toMatchSnapshot()
+  })
+})
